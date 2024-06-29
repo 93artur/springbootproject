@@ -1,5 +1,7 @@
 package com.springproject.springbootproject.buyer.service;
 
+import com.springproject.springbootproject.buyer.buyerdto.BuyerDto;
+
 public interface BuyerService {
 
     BuyerDto saveBuyer(BuyerDto buyerDto);

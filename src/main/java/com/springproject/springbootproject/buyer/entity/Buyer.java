@@ -2,11 +2,15 @@ package com.springproject.springbootproject.buyer.entity;
 
 import com.springproject.springbootproject.shop.entity.Shop;
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
+
 import java.util.List;
 
 @Entity
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "buyers")
 public class Buyer {
     @Id

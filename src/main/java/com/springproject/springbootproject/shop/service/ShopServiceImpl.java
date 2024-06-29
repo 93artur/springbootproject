@@ -2,7 +2,8 @@ package com.springproject.springbootproject.shop.service;
 
 import com.springproject.springbootproject.shop.entity.Shop;
 import com.springproject.springbootproject.shop.repository.ShopRepository;
-import com.springproject.springbootproject.shop.service.mapper.ShopDtoEntityAdapter;
+import com.springproject.springbootproject.shop.mapper.ShopDtoToEntityConverter;
+import com.springproject.springbootproject.shop.shopdto.ShopDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -10,11 +11,11 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class ShopServiceImpl implements ShopService {
     private final ShopRepository shopRepository;
-    private  final ShopDtoEntityAdapter shopDtoEntityAdapter;
+    private  final ShopDtoToEntityConverter shopDtoToEntityConverter;
 
     @Override
     public ShopDto saveShop(ShopDto shopDto) {
-        Shop shop = shopDtoEntityAdapter.mapToShop(shopDto);
+        Shop shop = shopDtoToEntityConverter.mapToShop(shopDto);
         shopRepository.save(shop);
         return shopDto;
     }
@@ -22,12 +23,12 @@ public class ShopServiceImpl implements ShopService {
     @Override
     public ShopDto findByName(String name) {
         Shop shop = shopRepository.findByName(name);
-        return shopDtoEntityAdapter.mapToShopDto(shop);
+        return shopDtoToEntityConverter.mapToShopDto(shop);
     }
 
     @Override
     public ShopDto updateShop(ShopDto shopDto) {
-        Shop shop = shopDtoEntityAdapter.mapToShop(shopDto);
+        Shop shop = shopDtoToEntityConverter.mapToShop(shopDto);
         shopRepository.save(shop);
         return shopDto;
     }

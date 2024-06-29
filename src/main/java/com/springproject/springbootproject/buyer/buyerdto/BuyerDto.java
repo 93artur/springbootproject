@@ -1,4 +1,4 @@
-package com.springproject.springbootproject.buyer.service;
+package com.springproject.springbootproject.buyer.buyerdto;
 
 import com.springproject.springbootproject.buyer.entity.Purchase;
 import com.springproject.springbootproject.shop.entity.Shop;

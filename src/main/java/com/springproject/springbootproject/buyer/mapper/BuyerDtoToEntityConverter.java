@@ -1,17 +1,17 @@
-package com.springproject.springbootproject.buyer.service.mapper;
+package com.springproject.springbootproject.buyer.mapper;
 
 import com.springproject.springbootproject.buyer.entity.Buyer;
-import com.springproject.springbootproject.buyer.service.BuyerDto;
+import com.springproject.springbootproject.buyer.buyerdto.BuyerDto;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.stereotype.Component;
 
 @Component
-public class BuyerDtoEntityAdapter {
+public class BuyerDtoToEntityConverter {
     private final ConversionService conversionService;
 
-    public BuyerDtoEntityAdapter(@Lazy final ConversionService conversionService) {
+    public BuyerDtoToEntityConverter(@Lazy final ConversionService conversionService) {
         this.conversionService = conversionService;
     }
 

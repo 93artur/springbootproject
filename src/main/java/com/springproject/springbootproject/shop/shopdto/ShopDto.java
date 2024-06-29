@@ -1,4 +1,4 @@
-package com.springproject.springbootproject.shop.service;
+package com.springproject.springbootproject.shop.shopdto;
 
 import com.springproject.springbootproject.buyer.entity.Buyer;
 import lombok.AllArgsConstructor;

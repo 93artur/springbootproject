@@ -1,7 +1,7 @@
-package com.springproject.springbootproject.buyer.service.mapper;
+package com.springproject.springbootproject.buyer.mapper;
 
 import com.springproject.springbootproject.buyer.entity.Buyer;
-import com.springproject.springbootproject.buyer.service.BuyerDto;
+import com.springproject.springbootproject.buyer.buyerdto.BuyerDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.springframework.core.convert.converter.Converter;

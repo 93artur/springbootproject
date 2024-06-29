@@ -1,6 +1,6 @@
 package com.springproject.springbootproject.buyer.controller;
 
-import com.springproject.springbootproject.buyer.service.BuyerDto;
+import com.springproject.springbootproject.buyer.buyerdto.BuyerDto;
 import com.springproject.springbootproject.buyer.service.BuyerService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;

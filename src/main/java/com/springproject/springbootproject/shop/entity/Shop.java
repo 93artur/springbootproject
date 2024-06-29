@@ -2,14 +2,16 @@ package com.springproject.springbootproject.shop.entity;
 
 import com.springproject.springbootproject.buyer.entity.Buyer;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
+
 import java.util.List;
 
 @Entity
-@Data
-@Table(name = "shops")
+@Getter
+@Setter
+@NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "shops")
 public class Shop {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

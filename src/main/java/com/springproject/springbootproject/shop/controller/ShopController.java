@@ -1,6 +1,6 @@
 package com.springproject.springbootproject.shop.controller;
 
-import com.springproject.springbootproject.shop.service.ShopDto;
+import com.springproject.springbootproject.shop.shopdto.ShopDto;
 import com.springproject.springbootproject.shop.service.ShopService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
